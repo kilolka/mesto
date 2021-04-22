@@ -1,0 +1,7 @@
+.places__info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1.5625rem 0.9375rem 1.9375rem 1.3125rem;
+    align-items: center;
+}
