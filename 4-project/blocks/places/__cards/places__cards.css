@@ -1,0 +1,8 @@
+.places__cards {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
