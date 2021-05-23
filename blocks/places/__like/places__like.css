@@ -2,10 +2,10 @@
     width: 30px;
     height: 1.1875rem;
     border: none;
-    background-image: url(../../../../images/heart.svg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 0;
+    background-image: url(../../../images/heart.svg);
 }
 
 .places__like:hover {
@@ -16,8 +16,4 @@
 
 .places__like:enabled {
     outline: none;
-}
-
-.places__like:active {
-    opacity: 1;
 }
