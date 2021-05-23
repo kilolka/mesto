@@ -1,8 +1,0 @@
-.content {
-    margin: 2.5rem 0 4.125rem;
-}
-@media screen and (max-width: 940px) {
-    .content {
-        margin: 2.625rem 1.1875rem 3rem;
-    }
-}
