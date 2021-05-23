@@ -22,7 +22,7 @@ const bigImg = document.querySelector('.popup__image');
 const bigImgInfo = document.querySelector('.popup__info');
 const profileSubmitForm = document.querySelector('#profilePopup');
 const placesSubmitForm = document.querySelector('#placesPopup');
-
+const placesSubmitBtn = document.querySelector(`#btn-submit-places`)
 const config = {
   formSelector: '.popup__form',
   inputSelector: '.popup__input',
@@ -98,26 +98,27 @@ function handleCardFormSubmit(evt) {
   img.value = "";
   closePopup(newPopupOpen);
   places.prepend(newCard(cardNew));
+  placesSubmitBtn.disabled = true;
 }
 
 
-profilePopup.addEventListener('click', event => {
-  if (event.target === event.currentTarget) {
-    closePopup(profilePopup);
-  }
-});
+// profilePopup.addEventListener('click', event => {
+//   if (event.target === event.currentTarget) {
+//     closePopup(profilePopup);
+//   }
+// });
 
-openNewPopup.addEventListener('click', event => {
-  if (event.target === event.currentTarget) {
-    closePopup(newPopupOpen);
-  }
-})
+// openNewPopup.addEventListener('click', event => {
+//   if (event.target === event.currentTarget) {
+//     closePopup(newPopupOpen);
+//   }
+// })
 
-popupBigImg.addEventListener('click', event => {
-  if (event.target === event.currentTarget) {
-    closePopup(popupBigImg);
-  }
-})
+// popupBigImg.addEventListener('click', event => {
+//   if (event.target === event.currentTarget) {
+//     closePopup(popupBigImg);
+//   }
+// })
 
 function openPopup(popup) {
   popup.classList.add('popup_open');
@@ -154,15 +155,28 @@ function closePopupEsc(evt) {
 //В вот порешать вопрос с крестиком - пришлось по потеть)))
 
 
-imgClose.addEventListener('click', function () { closePopup(popupBigImg) });
+// imgClose.addEventListener('click', function () { closePopup(popupBigImg) });
 
 placesSubmitForm.addEventListener('submit', handleCardFormSubmit);
 
-newPopupClose.addEventListener('click', function () { closePopup(newPopupOpen) });
+// newPopupClose.addEventListener('click', function () { closePopup(newPopupOpen) });
 
-profilePopupClose.addEventListener('click', function () { closePopup(profilePopup) });
+// profilePopupClose.addEventListener('click', function () { closePopup(profilePopup) });
 
 profileSubmitForm.addEventListener('submit', handleProfileFormSubmit);
 
 placesButton.addEventListener('click', function () { openPopup(newPopupOpen) });
 
+
+const popups = document.querySelectorAll('.popup')
+
+popups.forEach((popup) => {
+    popup.addEventListener('click', (evt) => {
+        if (evt.target.classList.contains('popup_open')) {
+            closePopup(popup)
+        }
+        if (evt.target.classList.contains('popup__button-close')) {
+          closePopup(popup)
+        }
+    })
+})
