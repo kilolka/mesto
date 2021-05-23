@@ -1,0 +1,4912 @@
+﻿23 АПР 2021, 20:23:31
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:23:31
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:23:31
+JsSIP:UA - authorization_jwt: NOT SHOWN +0ms
+------------
+,23 АПР 2021, 20:23:31
+JsSIP:UA - via_host: "enroskpugn32.invalid" +0ms
+------------
+,23 АПР 2021, 20:23:31
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:23:31
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +139ms
+------------
+,23 АПР 2021, 20:23:31
+JsSIP:WebSocketInterface send() +5ms
+------------
+,23 АПР 2021, 20:23:31
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS enroskpugn32.invalid;branch=z9hG4bK4852905;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.b2870000
+From: sip:davydovandrey@yandex-team.ru;tag=br93c6ffn1
+Call-ID: rn4bm6n8s12s5rl981b0ef
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMDwGCDApS/sK1epU78Rhnzmv7osnbm", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:23:32
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:23:32
+JsSIP:WebSocketInterface send() +690ms
+------------
+,23 АПР 2021, 20:23:32
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS enroskpugn32.invalid;branch=z9hG4bK3289195;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.b2870000
+From: sip:davydovandrey@yandex-team.ru;tag=br93c6ffn1
+Call-ID: rn4bm6n8s12s5rl981b0ef
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:23:32 GMT
+Contact: sip:lrr1csu5@enroskpugn32.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57334;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:22e46a3b-c15b-42de-8283-acefea59f7e0";temp-gruu="sip:uloc-60760888-7ff9-f8d6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:22e46a3b-c15b-42de-8283-acefea59f7e0";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +37ms
+------------
+,23 АПР 2021, 20:23:57
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:23:57
+JsSIP:WebSocketInterface received WebSocket message +32ms
+------------
+,23 АПР 2021, 20:23:57
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS enroskpugn32.invalid;branch=z9hG4bK5533169;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.b2870000
+From: sip:davydovandrey@yandex-team.ru;tag=j3hd43ah1n
+Call-ID: rn4bm6n8s12s5rl981b0ef
+CSeq: 3 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMD2WCDAq3JWR6Q/8W0HIRUDVW/UXw9", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +33ms
+------------
+,23 АПР 2021, 20:23:57
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:23:57
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS enroskpugn32.invalid;branch=z9hG4bK7999059
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=j3hd43ah1n
+Call-ID: rn4bm6n8s12s5rl981b0ef
+CSeq: 4 REGISTER
+Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMD2WCDAq3JWR6Q/8W0HIRUDVW/UXw9", uri="sip:yandex-team.ru", response="99201d97fb55bd87bba93886dbf5e40a", qop=auth, cnonce="i1ubh91ir248", nc=00000001
+Contact: sip:lrr1csu5@enroskpugn32.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:22e46a3b-c15b-42de-8283-acefea59f7e0";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:23:57
+JsSIP:WebSocketInterface send() +813ms
+------------
+,23 АПР 2021, 20:23:58
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS enroskpugn32.invalid;branch=z9hG4bK7999059;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.b2870000
+From: sip:davydovandrey@yandex-team.ru;tag=j3hd43ah1n
+Call-ID: rn4bm6n8s12s5rl981b0ef
+CSeq: 4 REGISTER
+Date: Fri, 23 Apr 2021 17:23:58 GMT
+Contact: sip:lrr1csu5@enroskpugn32.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57334;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:22e46a3b-c15b-42de-8283-acefea59f7e0";temp-gruu="sip:uloc-60760888-7ff9-f8d6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:22e46a3b-c15b-42de-8283-acefea59f7e0";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +39ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:Transport new() +0ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:UA - display_name: null +0ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:UA - via_host: "e3ouh9lgablo.invalid" +0ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +114ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK5185708
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=qaoo96j21c
+Call-ID: 5nr9t0qn7jjhuel32o37dg
+CSeq: 1 REGISTER
+Contact: sip:knud3ddf@e3ouh9lgablo.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:8f998b28-6f0c-423d-8261-d146e32f2fc4";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:WebSocketInterface send() +4ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:WebSocketInterface received WebSocket message +31ms
+------------
+,23 АПР 2021, 20:24:19
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK5185708;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.15ca0000
+From: sip:davydovandrey@yandex-team.ru;tag=qaoo96j21c
+Call-ID: 5nr9t0qn7jjhuel32o37dg
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMD72CDAsOLv673xIygQKVoLvqFRE/P", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +33ms
+------------
+,23 АПР 2021, 20:24:20
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "28850ee002b6dd4cef201d67aa6508b1"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +0ms
+------------
+,23 АПР 2021, 20:24:20
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:24:20
+JsSIP:WebSocketInterface send() +787ms
+------------
+,23 АПР 2021, 20:24:20
+JsSIP:WebSocketInterface received WebSocket message +36ms
+------------
+,23 АПР 2021, 20:24:20
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK4636577;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.15ca0000
+From: sip:davydovandrey@yandex-team.ru;tag=qaoo96j21c
+Call-ID: 5nr9t0qn7jjhuel32o37dg
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:24:20 GMT
+Contact: sip:knud3ddf@e3ouh9lgablo.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57365;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:8f998b28-6f0c-423d-8261-d146e32f2fc4";temp-gruu="sip:uloc-60760888-12c-55e6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:8f998b28-6f0c-423d-8261-d146e32f2fc4";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +37ms
+------------
+,23 АПР 2021, 20:24:25
+JsSIP:RTCSession connect() +0ms
+------------
+,23 АПР 2021, 20:24:25
+JsSIP:RTCSession newRTCSession() +0ms
+------------
+,23 АПР 2021, 20:24:25
+JsSIP:RTCSession emit "connecting" +1ms
+------------
+,23 АПР 2021, 20:24:25
+JsSIP:RTCSession createLocalDescription() +3ms
+------------
+,23 АПР 2021, 20:24:25
+WebphoneMain:newRTCSession:icecandidate (custom):  candidate:1775372849 1 udp 2122260223 192.168.1.137 53857 typ host generation 0 ufrag lkIR network-id 1
+------------
+,23 АПР 2021, 20:24:25
+JsSIP:Transport sending message:
+
+INVITE sip:+79031574567@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK8919549
+Max-Forwards: 69
+To: sip:+79031574567@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=v5583hhuk8
+Call-ID: pm8gnnhrde5k15e5sb7o
+CSeq: 2281 INVITE
+X-Call-ID: 39584
+Contact: sip:davydovandrey@yandex-team.ru;gr=urn:uuid:8f998b28-6f0c-423d-8261-d146e32f2fc4
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: gruu,ice,replaces,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 1782
+
+v=0
+o=- 457088430546132543 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0
+a=extmap-allow-mixed
+a=msid-semantic: WMS JdYtV0STBqVSvPwKLAQJSlZt0iA5S990Gogx
+m=audio 53857 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 192.168.1.137
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1775372849 1 udp 2122260223 192.168.1.137 53857 typ host generation 0 network-id 1
+a=ice-ufrag:lkIR
+a=ice-pwd:3s7a3kiKcd601imkBBJxNhRW
+a=ice-options:trickle
+a=fingerprint:sha-256 F4:31:6C:7F:92:EC:ED:C1:22:E3:91:0B:B8:2A:B8:02:47:5A:1C:08:22:2E:EC:41:7F:55:75:D5:92:B0:D0:8F
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:JdYtV0STBqVSvPwKLAQJSlZt0iA5S990Gogx 0e224153-4700-4866-bab1-16ae553eeca7
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1201463471 cname:xqsMJqLVFAvebbbk
+a=ssrc:1201463471 msid:JdYtV0STBqVSvPwKLAQJSlZt0iA5S990Gogx 0e224153-4700-4866-bab1-16ae553eeca7
+a=ssrc:1201463471 mslabel:JdYtV0STBqVSvPwKLAQJSlZt0iA5S990Gogx
+a=ssrc:1201463471 label:0e224153-4700-4866-bab1-16ae553eeca7
+
+ +0ms
+------------
+,23 АПР 2021, 20:24:25
+JsSIP:WebSocketInterface send() +6s
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:Transport received text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK8919549;received=5.167.154.107
+To: sip:+79031574567@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.15ca0000
+From: sip:davydovandrey@yandex-team.ru;tag=v5583hhuk8
+Call-ID: pm8gnnhrde5k15e5sb7o
+CSeq: 2281 INVITE
+Proxy-Authenticate: Digest realm="yandex-team.ru", nonce="YIMD9mCDAsqxW9lo1X3MZ+YD3daSL9mf", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +34ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:Transport send() +1ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:WebSocketInterface send() +2ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK8919549 +0ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:WebSocketInterface send() +763ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:WebSocketInterface received WebSocket message +42ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:Transport received text message:
+
+SIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK7858337;received=5.167.154.107
+To: sip:+79031574567@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=v5583hhuk8
+Call-ID: pm8gnnhrde5k15e5sb7o
+CSeq: 2282 INVITE
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +42ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:RTCSession receiveInviteResponse() +842ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:WebSocketInterface received WebSocket message +130ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:Transport received text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;received=5.167.154.107;branch=z9hG4bK7858337
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=v5583hhuk8
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=v5583hhuk8
+From: sip:davydovandrey@yandex-team.ru;tag=v5583hhuk8
+To: sip:+79031574567@yandex-team.ru;tag=g9gg1pHS3UgBS
+Call-ID: pm8gnnhrde5k15e5sb7o
+CSeq: 2282 INVITE
+Contact: sip:+79031574567@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619167545 1619167546 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 36778 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:36778
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:rOhUGXTP
+a=ice-pwd:JpIG5wtZ6dutLwpy53EiBxts5i
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 36778 typ host
+a=end-of-candidates
+
+ +131ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:RTCSession receiveInviteResponse() +132ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:24:26
+JsSIP:RTCSession emit "progress" +0ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:RTCSession canceling session +0ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:RTCSession session failed +1ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:RTCSession close() | closing local MediaStream +0ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:RTCSession emit "failed" +2ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:WebSocketInterface received WebSocket message +31ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:Transport received text message:
+
+SIP/2.0 200 canceling
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK7858337;received=5.167.154.107
+To: sip:+79031574567@yandex-team.ru;tag=34d40e5c7a321abbf5fc9cca65181eb7-15ca0000
+From: sip:davydovandrey@yandex-team.ru;tag=v5583hhuk8
+Call-ID: pm8gnnhrde5k15e5sb7o
+CSeq: 2282 CANCEL
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:Transport received text message:
+
+SIP/2.0 487 Request Terminated
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;received=5.167.154.107;branch=z9hG4bK7858337
+From: sip:davydovandrey@yandex-team.ru;tag=v5583hhuk8
+To: sip:+79031574567@yandex-team.ru;tag=g9gg1pHS3UgBS
+Call-ID: pm8gnnhrde5k15e5sb7o
+CSeq: 2282 INVITE
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Length: 0
+
+
+ +8ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:Transport sending message:
+
+ACK sip:+79031574567@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK7858337
+Max-Forwards: 69
+To: sip:+79031574567@yandex-team.ru;tag=g9gg1pHS3UgBS
+From: sip:davydovandrey@yandex-team.ru;tag=v5583hhuk8
+Call-ID: pm8gnnhrde5k15e5sb7o
+CSeq: 2282 ACK
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:24:30
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK7858337 +4s
+------------
+,23 АПР 2021, 20:24:45
+JsSIP:WebSocketInterface send() +15s
+------------
+,23 АПР 2021, 20:24:45
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK7481154;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.15ca0000
+From: sip:davydovandrey@yandex-team.ru;tag=t9c15s11kt
+Call-ID: 5nr9t0qn7jjhuel32o37dg
+CSeq: 3 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMECWCDAt3yHCC3557JZkxFPiljX6rj", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:24:45
+JsSIP:Transport send() +701ms
+------------
+,23 АПР 2021, 20:24:45
+JsSIP:WebSocketInterface send() +703ms
+------------
+,23 АПР 2021, 20:24:45
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS e3ouh9lgablo.invalid;branch=z9hG4bK9657728;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.15ca0000
+From: sip:davydovandrey@yandex-team.ru;tag=t9c15s11kt
+Call-ID: 5nr9t0qn7jjhuel32o37dg
+CSeq: 4 REGISTER
+Date: Fri, 23 Apr 2021 17:24:46 GMT
+Contact: sip:knud3ddf@e3ouh9lgablo.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57365;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:8f998b28-6f0c-423d-8261-d146e32f2fc4";temp-gruu="sip:uloc-60760888-12c-55e6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:8f998b28-6f0c-423d-8261-d146e32f2fc4";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:24:50
+JsSIP:UA stop() +25s
+------------
+,23 АПР 2021, 20:24:50
+JsSIP:UA unregister() +2ms
+------------
+,23 АПР 2021, 20:24:50
+JsSIP:Registrator already unregistered +0ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:UA - realm: null +0ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:UA - via_host: "9fgta05qmk3v.invalid" +0ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +215ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:WebSocketInterface send() +6ms
+------------
+,23 АПР 2021, 20:25:27
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK6939781;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=vhn5obaii4
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMENGCDAwgAlqdka5Royivw2nXZoWuV", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:25:28
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "81fcd5abf3d3739dd968e5b538b46aaf"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +0ms
+------------
+,23 АПР 2021, 20:25:28
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:25:28
+JsSIP:WebSocketInterface send() +717ms
+------------
+,23 АПР 2021, 20:25:28
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK7179224;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=vhn5obaii4
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:25:29 GMT
+Contact: sip:kddbilqg@9fgta05qmk3v.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57447;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";temp-gruu="sip:uloc-60760888-7ffd-dad6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +37ms
+------------
+,23 АПР 2021, 20:25:54
+JsSIP:Transport send() +26s
+------------
+,23 АПР 2021, 20:25:54
+JsSIP:WebSocketInterface send() +26s
+------------
+,23 АПР 2021, 20:25:54
+JsSIP:WebSocketInterface received WebSocket message +32ms
+------------
+,23 АПР 2021, 20:25:54
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK1664009;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=fnea7tt6sa
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 3 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMETmCDAyJwUpXgaNpvD6DK0jdhYVNC", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:25:55
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:25:55
+JsSIP:WebSocketInterface send() +868ms
+------------
+,23 АПР 2021, 20:25:55
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK1267838;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=fnea7tt6sa
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 4 REGISTER
+Date: Fri, 23 Apr 2021 17:25:55 GMT
+Contact: sip:kddbilqg@9fgta05qmk3v.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57447;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";temp-gruu="sip:uloc-60760888-7ffd-dad6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +37ms
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK9470751
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=tao8p4l6v1
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 5 REGISTER
+Contact: sip:kddbilqg@9fgta05qmk3v.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +1ms
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:WebSocketInterface received WebSocket message +34ms
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK9470751;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=tao8p4l6v1
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 5 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMEaGCDAzxkH21ZWECFQWy+3rJ3scjH", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +35ms
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "8da1e2abb6feb06e4fedaee16fdb69ba"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +26s
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:Transport send() +669ms
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:WebSocketInterface send() +671ms
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:WebSocketInterface received WebSocket message +35ms
+------------
+,23 АПР 2021, 20:26:20
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK9702313;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=tao8p4l6v1
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 6 REGISTER
+Date: Fri, 23 Apr 2021 17:26:21 GMT
+Contact: sip:kddbilqg@9fgta05qmk3v.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57447;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";temp-gruu="sip:uloc-60760888-7ffd-dad6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +37ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:UA call() +1m
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession connect() +1ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession emit "peerconnection" +2ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession newRTCSession() +0ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession emit "connecting" +0ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession createLocalDescription() +4ms
+------------
+,23 АПР 2021, 20:26:39
+WebphoneMain:newRTCSession:icecandidate (custom):  candidate:1775372849 1 udp 2122260223 192.168.1.137 50472 typ host generation 0 ufrag DtgI network-id 1
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:WebSocketInterface send() +18s
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:Transport received text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK8790400;received=5.167.154.107
+To: sip:+79685878485@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=68qeode2g6
+Call-ID: p648pgmakhf7uqnpvcji
+CSeq: 4813 INVITE
+Proxy-Authenticate: Digest realm="yandex-team.ru", nonce="YIMEe2CDA08OD051CGg5c8Tq9NInsPQ0", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:WebSocketInterface send() +2ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK8790400 +0ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "f13985a80a6bd1f2ec3b5012fc58569e"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +19s
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:Transport send() +703ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:WebSocketInterface send() +704ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:Transport received text message:
+
+SIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK901214;received=5.167.154.107
+To: sip:+79685878485@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=68qeode2g6
+Call-ID: p648pgmakhf7uqnpvcji
+CSeq: 4814 INVITE
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +34ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession receiveInviteResponse() +769ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:WebSocketInterface received WebSocket message +125ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:Transport received text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;received=5.167.154.107;branch=z9hG4bK901214
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=68qeode2g6
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=68qeode2g6
+From: sip:davydovandrey@yandex-team.ru;tag=68qeode2g6
+To: sip:+79685878485@yandex-team.ru;tag=X0B59S28493aN
+Call-ID: p648pgmakhf7uqnpvcji
+CSeq: 4814 INVITE
+Contact: sip:+79685878485@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619178084 1619178085 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 36862 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:36862
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:wFAulCbV
+a=ice-pwd:EOREDyxmVxtJuqISEee4rvPPYR
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 36862 typ host
+a=end-of-candidates
+
+ +126ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession receiveInviteResponse() +127ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession session progress +1ms
+------------
+,23 АПР 2021, 20:26:39
+JsSIP:RTCSession emit "progress" +0ms
+------------
+,23 АПР 2021, 20:26:45
+JsSIP:Transport send() +6s
+------------
+,23 АПР 2021, 20:26:45
+JsSIP:WebSocketInterface send() +6s
+------------
+,23 АПР 2021, 20:26:45
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK4660620;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=ppsosvfdft
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 7 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMEgmCDA1b2hS2zeIWr1qSLHgKO+vhM", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:26:46
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:26:46
+JsSIP:WebSocketInterface send() +736ms
+------------
+,23 АПР 2021, 20:26:46
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK398608;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=ppsosvfdft
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 8 REGISTER
+Date: Fri, 23 Apr 2021 17:26:47 GMT
+Contact: sip:kddbilqg@9fgta05qmk3v.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57447;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";temp-gruu="sip:uloc-60760888-7ffd-dad6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:RTCSession terminate() +15s
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:Transport sending message:
+
+CANCEL sip:+79685878485@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK901214
+Max-Forwards: 69
+To: sip:+79685878485@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=68qeode2g6
+Call-ID: p648pgmakhf7uqnpvcji
+CSeq: 4814 CANCEL
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:RTCSession emit "_failed" +0ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:RTCSession close() | closing local MediaStream +1ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:Dialog dialog p648pgmakhf7uqnpvcji68qeode2g6X0B59S28493aN deleted +15s
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:RTCSession emit "failed" +3ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:Transport received text message:
+
+SIP/2.0 200 canceling
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK901214;received=5.167.154.107
+To: sip:+79685878485@yandex-team.ru;tag=34d40e5c7a321abbf5fc9cca65181eb7-0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=68qeode2g6
+Call-ID: p648pgmakhf7uqnpvcji
+CSeq: 4814 CANCEL
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:Transport received text message:
+
+SIP/2.0 487 Request Terminated
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;received=5.167.154.107;branch=z9hG4bK901214
+From: sip:davydovandrey@yandex-team.ru;tag=68qeode2g6
+To: sip:+79685878485@yandex-team.ru;tag=X0B59S28493aN
+Call-ID: p648pgmakhf7uqnpvcji
+CSeq: 4814 INVITE
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Length: 0
+
+
+ +6ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:RTCSession receiveInviteResponse() +33ms
+------------
+,23 АПР 2021, 20:26:54
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK901214 +16s
+------------
+,23 АПР 2021, 20:27:11
+JsSIP:WebSocketInterface send() +17s
+------------
+,23 АПР 2021, 20:27:11
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK3997929;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=22jvcaikr6
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 9 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMEnGCDA3Dj4BsJw/BTOjA53Y2ob0FN", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:27:12
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:27:12
+JsSIP:WebSocketInterface send() +776ms
+------------
+,23 АПР 2021, 20:27:12
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK6852242;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.0ccd0000
+From: sip:davydovandrey@yandex-team.ru;tag=22jvcaikr6
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 10 REGISTER
+Date: Fri, 23 Apr 2021 17:27:13 GMT
+Contact: sip:kddbilqg@9fgta05qmk3v.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57447;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";temp-gruu="sip:uloc-60760888-7ffd-dad6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:27:13
+JsSIP:UA stop() +34s
+------------
+,23 АПР 2021, 20:27:13
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS 9fgta05qmk3v.invalid;branch=z9hG4bK7745222
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=kpe5m97r14
+Call-ID: 1b9v0o1ibvvgpl2t3cr40j
+CSeq: 11 REGISTER
+Contact: sip:kddbilqg@9fgta05qmk3v.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:fcf662ad-304f-4eab-aef1-d6eed6da7208";expires=0
+Expires: 0
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:27:13
+JsSIP:Registrator already unregistered +0ms
+------------
+,23 АПР 2021, 20:29:39
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:29:39
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:29:39
+JsSIP:UA - instance_id: "7056a5ba-fd94-4f16-a0cf-71c34a690f8a" +0ms
+------------
+,23 АПР 2021, 20:29:39
+JsSIP:Transport connect() +2ms
+------------
+,23 АПР 2021, 20:29:39
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +106ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:WebSocketInterface send() +4ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:WebSocketInterface received WebSocket message +30ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK2879220;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=qavlgu0j64
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMFMGCDBARu9gZcyslJ4q6GByNWvggu", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "91c601750c4133c369e42b1559ed8050"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +0ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK7734164
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=qavlgu0j64
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 2 REGISTER
+Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMFMGCDBARu9gZcyslJ4q6GByNWvggu", uri="sip:yandex-team.ru", response="91c601750c4133c369e42b1559ed8050", qop=auth, cnonce="6prpdkopeiou", nc=00000001
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:WebSocketInterface send() +737ms
+------------
+,23 АПР 2021, 20:29:40
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK7734164;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=qavlgu0j64
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:29:41 GMT
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57651;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";temp-gruu="sip:uloc-60760888-7ffb-58f6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +37ms
+------------
+,23 АПР 2021, 20:30:05
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK5193457
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=3ichbeuqff
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 3 REGISTER
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +1ms
+------------
+,23 АПР 2021, 20:30:05
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:30:05
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK5193457;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=3ichbeuqff
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 3 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMFSmCDBB6G8so83NQ4wCR2IM16HHIe", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:30:06
+JsSIP:Transport send() +775ms
+------------
+,23 АПР 2021, 20:30:06
+JsSIP:WebSocketInterface send() +776ms
+------------
+,23 АПР 2021, 20:30:06
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK8407977;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=3ichbeuqff
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 4 REGISTER
+Date: Fri, 23 Apr 2021 17:30:07 GMT
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57651;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";temp-gruu="sip:uloc-60760888-7ffb-58f6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +35ms
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:UA call() +43s
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:RTCSession connect() +0ms
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:RTCSession emit "peerconnection" +2ms
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:RTCSession newRTCSession() +1ms
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:RTCSession session connecting +19ms
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:RTCSession emit "connecting" +0ms
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:RTCSession createLocalDescription() +4ms
+------------
+,23 АПР 2021, 20:30:22
+WebphoneMain:newRTCSession:icecandidate (custom):  candidate:1775372849 1 udp 2122260223 192.168.1.137 62947 typ host generation 0 ufrag Sg// network-id 1
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:Transport sending message:
+
+INVITE sip:+79263248299@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK1974238
+Max-Forwards: 69
+To: sip:+79263248299@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+Call-ID: rmotv715krofl53vfc62
+CSeq: 985 INVITE
+X-Call-ID: 39598
+Contact: sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: gruu,ice,replaces,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 1779
+
+v=0
+o=- 2911280960114696907 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0
+a=extmap-allow-mixed
+a=msid-semantic: WMS 4zJxzPR4R7ffYaqbuwUTod38in9yYO7znRtV
+m=audio 62947 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 192.168.1.137
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1775372849 1 udp 2122260223 192.168.1.137 62947 typ host generation 0 network-id 1
+a=ice-ufrag:Sg//
+a=ice-pwd:1zK5PoZhi9EPVgTga+Lf1Ue3
+a=ice-options:trickle
+a=fingerprint:sha-256 80:07:42:ED:BE:73:D7:00:62:FC:22:35:24:29:87:67:4B:CF:7C:58:47:0A:A0:3E:5B:E5:98:AA:A1:9B:C5:67
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:4zJxzPR4R7ffYaqbuwUTod38in9yYO7znRtV 80cc0be1-2483-4e23-8817-d71b7eae8fac
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:619153793 cname:UFhva5MUaWFyU7k+
+a=ssrc:619153793 msid:4zJxzPR4R7ffYaqbuwUTod38in9yYO7znRtV 80cc0be1-2483-4e23-8817-d71b7eae8fac
+a=ssrc:619153793 mslabel:4zJxzPR4R7ffYaqbuwUTod38in9yYO7znRtV
+a=ssrc:619153793 label:80cc0be1-2483-4e23-8817-d71b7eae8fac
+
+ +0ms
+------------
+,23 АПР 2021, 20:30:22
+JsSIP:WebSocketInterface send() +16s
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:Transport received text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK1974238;received=5.167.154.107
+To: sip:+79263248299@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+Call-ID: rmotv715krofl53vfc62
+CSeq: 985 INVITE
+Proxy-Authenticate: Digest realm="yandex-team.ru", nonce="YIMFW2CDBC+aoYhzSORRmpcuAnJOiUSm", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +33ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:WebSocketInterface send() +2ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK1974238 +0ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:WebSocketInterface send() +627ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:Transport received text message:
+
+SIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK7556249;received=5.167.154.107
+To: sip:+79263248299@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+Call-ID: rmotv715krofl53vfc62
+CSeq: 986 INVITE
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +44ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:RTCSession receiveInviteResponse() +708ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:WebSocketInterface received WebSocket message +152ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:Transport received text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS cel9g04p782d.invalid;received=5.167.154.107;branch=z9hG4bK7556249
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=9ai9rabqrk
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=9ai9rabqrk
+From: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+To: sip:+79263248299@yandex-team.ru;tag=vUpHB6X8NNHHm
+Call-ID: rmotv715krofl53vfc62
+CSeq: 986 INVITE
+Contact: sip:+79263248299@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619181556 1619181557 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 36966 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:36966
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Q2C7qyJr
+a=ice-pwd:pDNYpBAQ4JxeLSwxVLjrI36CvK
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 36966 typ host
+a=end-of-candidates
+
+ +153ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:Dialog new UAC dialog created with status EARLY +0ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:RTCSession session progress +2ms
+------------
+,23 АПР 2021, 20:30:23
+JsSIP:RTCSession emit "progress" +0ms
+------------
+,23 АПР 2021, 20:30:32
+JsSIP:Transport send() +8s
+------------
+,23 АПР 2021, 20:30:32
+JsSIP:WebSocketInterface send() +8s
+------------
+,23 АПР 2021, 20:30:32
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK115037;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=i9jqj7839v
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 5 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMFZGCDBDh/tNL2+rKH6zy8gjOv+hbF", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +26ms
+------------
+,23 АПР 2021, 20:30:32
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:30:32
+JsSIP:WebSocketInterface send() +652ms
+------------
+,23 АПР 2021, 20:30:32
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK3518629;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=i9jqj7839v
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 6 REGISTER
+Date: Fri, 23 Apr 2021 17:30:33 GMT
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57651;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";temp-gruu="sip:uloc-60760888-7ffb-58f6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +30ms
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;received=5.167.154.107;branch=z9hG4bK7556249
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=9ai9rabqrk
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=9ai9rabqrk
+From: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+To: sip:+79263248299@yandex-team.ru;tag=vUpHB6X8NNHHm
+Call-ID: rmotv715krofl53vfc62
+CSeq: 986 INVITE
+Contact: sip:+79263248299@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Session-Expires: 120;refresher=uas
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619181556 1619181557 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 36966 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:36966
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Q2C7qyJr
+a=ice-pwd:pDNYpBAQ4JxeLSwxVLjrI36CvK
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 36966 typ host
+a=end-of-candidates
+
+ +10s
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:RTCSession receiveInviteResponse() +19s
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:RTCSession session accepted +5ms
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:RTCSession emit "accepted" +1ms
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:RTCSession sendRequest() +3ms
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:RTCSession session confirmed +1ms
+------------
+,23 АПР 2021, 20:30:42
+JsSIP:RTCSession emit "confirmed" +0ms
+------------
+,23 АПР 2021, 20:30:55
+JsSIP:InviteClientTransaction Timer B expired for transaction z9hG4bK7556249 +33s
+------------
+,23 АПР 2021, 20:30:57
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK8086744
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=supvll80dl
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 7 REGISTER
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:30:57
+JsSIP:WebSocketInterface send() +15s
+------------
+,23 АПР 2021, 20:30:57
+JsSIP:WebSocketInterface received WebSocket message +24ms
+------------
+,23 АПР 2021, 20:30:57
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK8086744;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=supvll80dl
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 7 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMFfmCDBFKX/7kmOMk59SBquYpjZtkB", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +25ms
+------------
+,23 АПР 2021, 20:30:58
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:30:58
+JsSIP:WebSocketInterface send() +716ms
+------------
+,23 АПР 2021, 20:30:58
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK8897291;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=supvll80dl
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 8 REGISTER
+Date: Fri, 23 Apr 2021 17:30:59 GMT
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57651;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";temp-gruu="sip:uloc-60760888-7ffb-58f6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +29ms
+------------
+,23 АПР 2021, 20:31:14
+JsSIP:InviteClientTransaction Timer M expired for transaction z9hG4bK7556249 +19s
+------------
+,23 АПР 2021, 20:31:23
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK2311478
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=bkqma53kr8
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 9 REGISTER
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +1ms
+------------
+,23 АПР 2021, 20:31:23
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:31:23
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK2311478;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=bkqma53kr8
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 9 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMFmGCDBGycEOu933vYWFuK5np64Kso", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +25ms
+------------
+,23 АПР 2021, 20:31:24
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:31:24
+JsSIP:WebSocketInterface send() +757ms
+------------
+,23 АПР 2021, 20:31:24
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK4043538;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=bkqma53kr8
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 10 REGISTER
+Date: Fri, 23 Apr 2021 17:31:25 GMT
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57651;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";temp-gruu="sip:uloc-60760888-7ffb-58f6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +29ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:Transport received text message:
+
+INVITE sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK22d9.54b053580f90b2dfb2b51b7541ce247d.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bK9jraBNm66Nt0Q
+Max-Forwards: 69
+From: sip:+79263248299@yandex-team.ru;tag=vUpHB6X8NNHHm
+To: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+Call-ID: rmotv715krofl53vfc62
+CSeq: 35045762 INVITE
+Contact: sip:+79263248299@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Session-Expires: 120;refresher=uac
+Min-SE: 120
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 552
+
+v=0
+o=FreeSWITCH 1619181556 1619181557 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 36966 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:36966
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Q2C7qyJr
+a=ice-pwd:pDNYpBAQ4JxeLSwxVLjrI36CvK
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 36966 typ host
+a=end-of-candidates
+
+ +24s
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:WebSocketInterface send() +4ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:RTCSession _processInDialogSdpOffer() +0ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:RTCSession emit "sdp" +3ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:RTCSession createLocalDescription() +1ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:Transport send() +7ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:WebSocketInterface send() +8ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK22d9.ffe8a7a3a7988f1a05f02177cbfd3ed2.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKavH3cg593ygKK
+Max-Forwards: 69
+From: sip:+79263248299@yandex-team.ru;tag=vUpHB6X8NNHHm
+To: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+Call-ID: rmotv715krofl53vfc62
+CSeq: 35045762 ACK
+Content-Length: 0
+
+
+ +38ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:RTCSession receiveRequest() +39ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK22d9.ffe8a7a3a7988f1a05f02177cbfd3ed2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK22d9.ffe8a7a3a7988f1a05f02177cbfd3ed2.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKavH3cg593ygKK
+Max-Forwards: 69
+From: sip:+79263248299@yandex-team.ru;tag=vUpHB6X8NNHHm
+To: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+Call-ID: rmotv715krofl53vfc62
+CSeq: 35045762 ACK
+Content-Length: 0
+
+
+ +2ms
+------------
+,23 АПР 2021, 20:31:48
+JsSIP:RTCSession receiveRequest() +2ms
+------------
+,23 АПР 2021, 20:31:49
+JsSIP:Transport send() +1s
+------------
+,23 АПР 2021, 20:31:49
+JsSIP:WebSocketInterface send() +1s
+------------
+,23 АПР 2021, 20:31:49
+JsSIP:WebSocketInterface received WebSocket message +25ms
+------------
+,23 АПР 2021, 20:31:49
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK8039970;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=lao2tnpobg
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 11 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMFsmCDBIYmabI2oo+1gMQNb5xBScBV", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +26ms
+------------
+,23 АПР 2021, 20:31:50
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "e3e72923370416d1c92e3911cdd1da8e"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +26s
+------------
+,23 АПР 2021, 20:31:50
+JsSIP:Transport send() +699ms
+------------
+,23 АПР 2021, 20:31:50
+JsSIP:WebSocketInterface send() +700ms
+------------
+,23 АПР 2021, 20:31:50
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK5152896;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.3fce0000
+From: sip:davydovandrey@yandex-team.ru;tag=lao2tnpobg
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 12 REGISTER
+Date: Fri, 23 Apr 2021 17:31:50 GMT
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57651;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";temp-gruu="sip:uloc-60760888-7ffb-58f6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +29ms
+------------
+,23 АПР 2021, 20:31:55
+JsSIP:RTCSession sendRequest() +0ms
+------------
+,23 АПР 2021, 20:31:55
+JsSIP:WebSocketInterface send() +6s
+------------
+,23 АПР 2021, 20:31:55
+JsSIP:RTCSession close() | closing local MediaStream +0ms
+------------
+,23 АПР 2021, 20:31:55
+JsSIP:RTCSession emit "ended" +4ms
+------------
+,23 АПР 2021, 20:31:55
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS cel9g04p782d.invalid;received=5.167.154.107;branch=z9hG4bK5740994
+From: sip:davydovandrey@yandex-team.ru;tag=9ai9rabqrk
+To: sip:+79263248299@yandex-team.ru;tag=vUpHB6X8NNHHm
+Call-ID: rmotv715krofl53vfc62
+CSeq: 987 BYE
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Content-Length: 0
+
+
+ +54ms
+------------
+,23 АПР 2021, 20:31:58
+JsSIP:UA stop() +2m
+------------
+,23 АПР 2021, 20:31:58
+JsSIP:Transport send() +3s
+------------
+,23 АПР 2021, 20:31:58
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS cel9g04p782d.invalid;branch=z9hG4bK1865805
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=f7qc1t5m9h
+Call-ID: p4rsfeo5qjl383q29da81k
+CSeq: 13 REGISTER
+Contact: sip:4lfnfemg@cel9g04p782d.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:7056a5ba-fd94-4f16-a0cf-71c34a690f8a";expires=0
+Expires: 0
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +1ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:UA - use_preloaded_route: false +0ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:Transport connect() +2ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +110ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;branch=z9hG4bK8225871
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=o249totom8
+Call-ID: hcpqv0hnq5amho2qjdtqk9
+CSeq: 1 REGISTER
+Contact: sip:le19k66d@t0h58rlqbkva.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:97da3ace-7ae3-408c-b9c0-3be4f1e8b7b0";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:32:56
+JsSIP:WebSocketInterface send() +4ms
+------------
+,23 АПР 2021, 20:32:57
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;branch=z9hG4bK8225871;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.c5eb0000
+From: sip:davydovandrey@yandex-team.ru;tag=o249totom8
+Call-ID: hcpqv0hnq5amho2qjdtqk9
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMF9WCDBMnuByIYBv1QjFuBGrQhEq06", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:32:57
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "5b5a3bb54b16a4f2f0768bf248a495fc"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +0ms
+------------
+,23 АПР 2021, 20:32:57
+JsSIP:Transport send() +790ms
+------------
+,23 АПР 2021, 20:32:57
+JsSIP:WebSocketInterface send() +791ms
+------------
+,23 АПР 2021, 20:32:57
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;branch=z9hG4bK4944813;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.c5eb0000
+From: sip:davydovandrey@yandex-team.ru;tag=o249totom8
+Call-ID: hcpqv0hnq5amho2qjdtqk9
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:32:58 GMT
+Contact: sip:le19k66d@t0h58rlqbkva.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57769;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:97da3ace-7ae3-408c-b9c0-3be4f1e8b7b0";temp-gruu="sip:uloc-60760888-7fef-31e6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:97da3ace-7ae3-408c-b9c0-3be4f1e8b7b0";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +36ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:RTCSession new +0ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:RTCSession connect() +1ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:RTCSession emit "peerconnection" +2ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:RTCSession newRTCSession() +1ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:RTCSession emit "connecting" +0ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:RTCSession createLocalDescription() +5ms
+------------
+,23 АПР 2021, 20:33:03
+WebphoneMain:newRTCSession:icecandidate (custom):  candidate:1775372849 1 udp 2122260223 192.168.1.137 58976 typ host generation 0 ufrag 8AHu network-id 1
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:Transport sending message:
+
+INVITE sip:+79995353097@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;branch=z9hG4bK5747683
+Max-Forwards: 69
+To: sip:+79995353097@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=6cttb1oqk8
+Call-ID: rem9pl31kh8h5mersjv6
+CSeq: 8116 INVITE
+X-Call-ID: 39606
+X-MOBID: 79585969822
+Contact: sip:davydovandrey@yandex-team.ru;gr=urn:uuid:97da3ace-7ae3-408c-b9c0-3be4f1e8b7b0
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: gruu,ice,replaces,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 1783
+
+v=0
+o=- 6529591334003198965 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0
+a=extmap-allow-mixed
+a=msid-semantic: WMS IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m
+m=audio 58976 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 192.168.1.137
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1775372849 1 udp 2122260223 192.168.1.137 58976 typ host generation 0 network-id 1
+a=ice-ufrag:8AHu
+a=ice-pwd:PKeQXIqmnCtPamY6/OSD7qED
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:CE:47:F0:21:6A:D3:C3:81:C0:32:8D:EF:B4:E7:AC:B0:52:34:CC:3A:39:78:61:19:D5:39:F6:B7:A9:B9:98
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m 30170546-d747-4f8e-b1c1-b9db3108f228
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:3950367084 cname:DwWBEnpVbKSClDYb
+a=ssrc:3950367084 msid:IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m 30170546-d747-4f8e-b1c1-b9db3108f228
+a=ssrc:3950367084 mslabel:IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m
+a=ssrc:3950367084 label:30170546-d747-4f8e-b1c1-b9db3108f228
+
+ +0ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:WebSocketInterface send() +6s
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:Transport received text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;branch=z9hG4bK5747683;received=5.167.154.107
+To: sip:+79995353097@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.c5eb0000
+From: sip:davydovandrey@yandex-team.ru;tag=6cttb1oqk8
+Call-ID: rem9pl31kh8h5mersjv6
+CSeq: 8116 INVITE
+Proxy-Authenticate: Digest realm="yandex-team.ru", nonce="YIMF/GCDBNBRgFMhaHV7WWwFS4x6P+RA", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +34ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:Transport send() +1ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:WebSocketInterface send() +3ms
+------------
+,23 АПР 2021, 20:33:03
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK5747683 +0ms
+------------
+,23 АПР 2021, 20:33:04
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "b2ad90a1e8212e42f5168363f1a93ed3"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +7s
+------------
+,23 АПР 2021, 20:33:04
+JsSIP:Transport sending message:
+
+INVITE sip:+79995353097@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;branch=z9hG4bK3744618
+Max-Forwards: 69
+To: sip:+79995353097@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=6cttb1oqk8
+Call-ID: rem9pl31kh8h5mersjv6
+CSeq: 8117 INVITE
+Proxy-Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMF/GCDBNBRgFMhaHV7WWwFS4x6P+RA", uri="sip:+79995353097@yandex-team.ru", response="b2ad90a1e8212e42f5168363f1a93ed3", qop=auth, cnonce="d72fr338tmhb", nc=00000001
+X-Call-ID: 39606
+X-MOBID: 79585969822
+Contact: sip:davydovandrey@yandex-team.ru;gr=urn:uuid:97da3ace-7ae3-408c-b9c0-3be4f1e8b7b0
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: gruu,ice,replaces,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 1783
+
+v=0
+o=- 6529591334003198965 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0
+a=extmap-allow-mixed
+a=msid-semantic: WMS IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m
+m=audio 58976 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 192.168.1.137
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1775372849 1 udp 2122260223 192.168.1.137 58976 typ host generation 0 network-id 1
+a=ice-ufrag:8AHu
+a=ice-pwd:PKeQXIqmnCtPamY6/OSD7qED
+a=ice-options:trickle
+a=fingerprint:sha-256 8A:CE:47:F0:21:6A:D3:C3:81:C0:32:8D:EF:B4:E7:AC:B0:52:34:CC:3A:39:78:61:19:D5:39:F6:B7:A9:B9:98
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m 30170546-d747-4f8e-b1c1-b9db3108f228
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:3950367084 cname:DwWBEnpVbKSClDYb
+a=ssrc:3950367084 msid:IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m 30170546-d747-4f8e-b1c1-b9db3108f228
+a=ssrc:3950367084 mslabel:IXWa2ZZZb4gT07cDjJtMXNgm1QP2AjsPqY1m
+a=ssrc:3950367084 label:30170546-d747-4f8e-b1c1-b9db3108f228
+
+ +0ms
+------------
+,23 АПР 2021, 20:33:04
+JsSIP:WebSocketInterface send() +837ms
+------------
+,23 АПР 2021, 20:33:04
+JsSIP:Transport received text message:
+
+SIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;branch=z9hG4bK3744618;received=5.167.154.107
+To: sip:+79995353097@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=6cttb1oqk8
+Call-ID: rem9pl31kh8h5mersjv6
+CSeq: 8117 INVITE
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +40ms
+------------
+,23 АПР 2021, 20:33:04
+JsSIP:RTCSession receiveInviteResponse() +913ms
+------------
+,23 АПР 2021, 20:33:05
+JsSIP:Transport received text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS t0h58rlqbkva.invalid;received=5.167.154.107;branch=z9hG4bK3744618
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=6cttb1oqk8
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=6cttb1oqk8
+From: sip:davydovandrey@yandex-team.ru;tag=6cttb1oqk8
+To: sip:+79995353097@yandex-team.ru;tag=S35jgtvg9H9US
+Call-ID: rem9pl31kh8h5mersjv6
+CSeq: 8117 INVITE
+Contact: sip:+79995353097@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619180721 1619180722 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37096 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37096
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:fKWZmNfd
+a=ice-pwd:gyt2czvQy2LV4w5Cc6PSdHGwwb
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37096 typ host
+a=end-of-candidates
+
+ +145ms
+------------
+,23 АПР 2021, 20:33:05
+JsSIP:RTCSession receiveInviteResponse() +146ms
+------------
+,23 АПР 2021, 20:33:05
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:33:05
+JsSIP:RTCSession emit "progress" +0ms
+------------
+,23 АПР 2021, 20:33:10
+JsSIP:UA stop() +7s
+------------
+,23 АПР 2021, 20:33:10
+JsSIP:WebSocketInterface send() +6s
+------------
+,23 АПР 2021, 20:33:10
+JsSIP:RTCSession terminate() +6s
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:UA - display_name: null +0ms
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:UA - via_host: "u49qjeg1rco8.invalid" +0ms
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +114ms
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:WebSocketInterface send() +4ms
+------------
+,23 АПР 2021, 20:34:37
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK5168890;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.9a8f0000
+From: sip:davydovandrey@yandex-team.ru;tag=pna0l2sqij
+Call-ID: b68mj9r4gf7svnfoej4reb
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMGWWCDBS2ugkmUIfVFspAYJ/mZtk2B", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +33ms
+------------
+,23 АПР 2021, 20:34:38
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:34:38
+JsSIP:WebSocketInterface send() +741ms
+------------
+,23 АПР 2021, 20:34:38
+JsSIP:WebSocketInterface received WebSocket message +36ms
+------------
+,23 АПР 2021, 20:34:38
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK7922110;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.9a8f0000
+From: sip:davydovandrey@yandex-team.ru;tag=pna0l2sqij
+Call-ID: b68mj9r4gf7svnfoej4reb
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:34:38 GMT
+Contact: sip:e9u3r4j3@u49qjeg1rco8.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57837;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:45b03a02-4de0-4dec-9630-ed6e7d3e2195";temp-gruu="sip:uloc-60760888-7fef-71e6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:45b03a02-4de0-4dec-9630-ed6e7d3e2195";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +37ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:RTCSession new +0ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:RTCSession connect() +1ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:RTCSession newRTCSession() +0ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:RTCSession emit "connecting" +0ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:RTCSession createLocalDescription() +4ms
+------------
+,23 АПР 2021, 20:34:42
+WebphoneMain:newRTCSession:icecandidate (custom):  candidate:1775372849 1 udp 2122260223 192.168.1.137 65423 typ host generation 0 ufrag 9Cbk network-id 1
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:WebSocketInterface send() +5s
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:WebSocketInterface received WebSocket message +33ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:Transport received text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK468484;received=5.167.154.107
+To: sip:+79250482392@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.9a8f0000
+From: sip:davydovandrey@yandex-team.ru;tag=b86vfubj2r
+Call-ID: 6kg1ltrnvds4muqlgmka
+CSeq: 7431 INVITE
+Proxy-Authenticate: Digest realm="yandex-team.ru", nonce="YIMGX2CDBTOpHb8VQC3sLFOlEsRJtSCv", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +33ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:Transport sending message:
+
+ACK sip:+79250482392@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK468484
+Max-Forwards: 69
+To: sip:+79250482392@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.9a8f0000
+From: sip:davydovandrey@yandex-team.ru;tag=b86vfubj2r
+Call-ID: 6kg1ltrnvds4muqlgmka
+CSeq: 7431 ACK
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:34:42
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK468484 +0ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:Transport send() +823ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:WebSocketInterface send() +824ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:Transport received text message:
+
+SIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK3629078;received=5.167.154.107
+To: sip:+79250482392@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=b86vfubj2r
+Call-ID: 6kg1ltrnvds4muqlgmka
+CSeq: 7432 INVITE
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +41ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:RTCSession receiveInviteResponse() +902ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:Transport received text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;received=5.167.154.107;branch=z9hG4bK3629078
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=b86vfubj2r
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=b86vfubj2r
+From: sip:davydovandrey@yandex-team.ru;tag=b86vfubj2r
+To: sip:+79250482392@yandex-team.ru;tag=j66QN0vS4DZ5D
+Call-ID: 6kg1ltrnvds4muqlgmka
+CSeq: 7432 INVITE
+Contact: sip:+79250482392@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619166750 1619166751 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37170 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37170
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:LDy37U8r
+a=ice-pwd:d39cZcFofqvp959B4ah6dTldrY
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37170 typ host
+a=end-of-candidates
+
+ +141ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:RTCSession receiveInviteResponse() +142ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:34:43
+JsSIP:RTCSession emit "progress" +0ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:RTCSession canceling session +0ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:WebSocketInterface send() +7s
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:RTCSession close() | closing local MediaStream +0ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:Dialog dialog 6kg1ltrnvds4muqlgmkab86vfubj2rj66QN0vS4DZ5D deleted +7s
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:RTCSession emit "failed" +3ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:WebSocketInterface received WebSocket message +30ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:Transport received text message:
+
+SIP/2.0 200 canceling
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK3629078;received=5.167.154.107
+To: sip:+79250482392@yandex-team.ru;tag=34d40e5c7a321abbf5fc9cca65181eb7-9a8f0000
+From: sip:davydovandrey@yandex-team.ru;tag=b86vfubj2r
+Call-ID: 6kg1ltrnvds4muqlgmka
+CSeq: 7432 CANCEL
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +30ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:Transport received text message:
+
+SIP/2.0 487 Request Terminated
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;received=5.167.154.107;branch=z9hG4bK3629078
+From: sip:davydovandrey@yandex-team.ru;tag=b86vfubj2r
+To: sip:+79250482392@yandex-team.ru;tag=j66QN0vS4DZ5D
+Call-ID: 6kg1ltrnvds4muqlgmka
+CSeq: 7432 INVITE
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Length: 0
+
+
+ +9ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:Transport sending message:
+
+ACK sip:+79250482392@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK3629078
+Max-Forwards: 69
+To: sip:+79250482392@yandex-team.ru;tag=j66QN0vS4DZ5D
+From: sip:davydovandrey@yandex-team.ru;tag=b86vfubj2r
+Call-ID: 6kg1ltrnvds4muqlgmka
+CSeq: 7432 ACK
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:34:50
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK3629078 +8s
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK6954174
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=5ogjp0deu6
+Call-ID: b68mj9r4gf7svnfoej4reb
+CSeq: 3 REGISTER
+Contact: sip:e9u3r4j3@u49qjeg1rco8.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:45b03a02-4de0-4dec-9630-ed6e7d3e2195";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:WebSocketInterface send() +12s
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:WebSocketInterface received WebSocket message +26ms
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK6954174;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.9a8f0000
+From: sip:davydovandrey@yandex-team.ru;tag=5ogjp0deu6
+Call-ID: b68mj9r4gf7svnfoej4reb
+CSeq: 3 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMGc2CDBUdbZvOVax8UOR3sag2sTXxt", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:Transport send() +731ms
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:WebSocketInterface send() +733ms
+------------
+,23 АПР 2021, 20:35:03
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK6570931;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.9a8f0000
+From: sip:davydovandrey@yandex-team.ru;tag=5ogjp0deu6
+Call-ID: b68mj9r4gf7svnfoej4reb
+CSeq: 4 REGISTER
+Date: Fri, 23 Apr 2021 17:35:04 GMT
+Contact: sip:e9u3r4j3@u49qjeg1rco8.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57837;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:45b03a02-4de0-4dec-9630-ed6e7d3e2195";temp-gruu="sip:uloc-60760888-7fef-71e6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:45b03a02-4de0-4dec-9630-ed6e7d3e2195";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +34ms
+------------
+,23 АПР 2021, 20:35:04
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS u49qjeg1rco8.invalid;branch=z9hG4bK4790799
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=k1pqklihpb
+Call-ID: b68mj9r4gf7svnfoej4reb
+CSeq: 5 REGISTER
+Contact: sip:e9u3r4j3@u49qjeg1rco8.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:45b03a02-4de0-4dec-9630-ed6e7d3e2195";expires=0
+Expires: 0
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:35:04
+JsSIP:Registrator already unregistered +0ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:Transport new() +0ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:UA - register: true +0ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +114ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:WebSocketInterface send() +5ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:WebSocketInterface received WebSocket message +31ms
+------------
+,23 АПР 2021, 20:36:31
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK8402739;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=rheh7l0nnp
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMGzGCDBaD9ajCtbMIELaT8mWVqhRG2", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:36:32
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:36:32
+JsSIP:WebSocketInterface send() +822ms
+------------
+,23 АПР 2021, 20:36:32
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6519498;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=rheh7l0nnp
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:36:33 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +36ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:UA call() +5s
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:RTCSession connect() +0ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:RTCSession newRTCSession() +0ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:RTCSession emit "connecting" +1ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:RTCSession createLocalDescription() +5ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:Transport send() +4s
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:WebSocketInterface send() +4s
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:Transport received text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK5966087;received=5.167.154.107
+To: sip:+79169924545@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 9504 INVITE
+Proxy-Authenticate: Digest realm="yandex-team.ru", nonce="YIMG0GCDBaS4C+4FOtetzdvjpAu8r0nO", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +34ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:Transport send() +1ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:WebSocketInterface send() +3ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK5966087 +0ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "e7a53e3c0b7d454d2efa1c106a0a0ffc"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +4s
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:Transport send() +644ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:WebSocketInterface send() +644ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:Transport received text message:
+
+SIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK3666890;received=5.167.154.107
+To: sip:+79169924545@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 9505 INVITE
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +43ms
+------------
+,23 АПР 2021, 20:36:36
+JsSIP:RTCSession receiveInviteResponse() +724ms
+------------
+,23 АПР 2021, 20:36:37
+JsSIP:Transport received text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;received=5.167.154.107;branch=z9hG4bK3666890
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=00u9bae7fk
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=00u9bae7fk
+From: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+To: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 9505 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619182133 1619182134 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37226 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37226
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Bct1V4F8
+a=ice-pwd:gsUYLPf2k4xKQErHxqUE9RrK94
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37226 typ host
+a=end-of-candidates
+
+ +145ms
+------------
+,23 АПР 2021, 20:36:37
+JsSIP:Dialog new UAC dialog created with status EARLY +0ms
+------------
+,23 АПР 2021, 20:36:37
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:36:37
+JsSIP:RTCSession session progress +1ms
+------------
+,23 АПР 2021, 20:36:37
+JsSIP:RTCSession emit "progress" +0ms
+------------
+,23 АПР 2021, 20:36:50
+JsSIP:WebSocketInterface received WebSocket message +13s
+------------
+,23 АПР 2021, 20:36:50
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;received=5.167.154.107;branch=z9hG4bK3666890
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=00u9bae7fk
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=00u9bae7fk
+From: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+To: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 9505 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Session-Expires: 120;refresher=uas
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619182133 1619182134 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37226 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37226
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Bct1V4F8
+a=ice-pwd:gsUYLPf2k4xKQErHxqUE9RrK94
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37226 typ host
+a=end-of-candidates
+
+ +13s
+------------
+,23 АПР 2021, 20:36:50
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:36:50
+JsSIP:RTCSession emit "accepted" +0ms
+------------
+,23 АПР 2021, 20:36:50
+JsSIP:RTCSession sendRequest() +4ms
+------------
+,23 АПР 2021, 20:36:50
+JsSIP:Transport sending message:
+
+ACK sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp SIP/2.0
+Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=00u9bae7fk
+Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=00u9bae7fk
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK9311031
+Max-Forwards: 69
+To: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+From: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 9505 ACK
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:36:50
+JsSIP:RTCSession emit "confirmed" +0ms
+------------
+,23 АПР 2021, 20:36:57
+JsSIP:Transport send() +8s
+------------
+,23 АПР 2021, 20:36:57
+JsSIP:WebSocketInterface send() +8s
+------------
+,23 АПР 2021, 20:36:57
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6307211;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=39onae66a9
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 3 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMG5mCDBbqSHO82cT4Yh7WUeLS4j9zQ", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:36:58
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "a1a7a92a5b66c57e0ee6e3ad1c99e1b4"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +21s
+------------
+,23 АПР 2021, 20:36:58
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK5674711
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=39onae66a9
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 4 REGISTER
+Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMG5mCDBbqSHO82cT4Yh7WUeLS4j9zQ", uri="sip:yandex-team.ru", response="a1a7a92a5b66c57e0ee6e3ad1c99e1b4", qop=auth, cnonce="3qb9ldn5c0ta", nc=00000001
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:36:58
+JsSIP:WebSocketInterface send() +683ms
+------------
+,23 АПР 2021, 20:36:58
+JsSIP:WebSocketInterface received WebSocket message +30ms
+------------
+,23 АПР 2021, 20:36:58
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK5674711;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=39onae66a9
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 4 REGISTER
+Date: Fri, 23 Apr 2021 17:36:58 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:37:08
+JsSIP:InviteClientTransaction Timer B expired for transaction z9hG4bK3666890 +33s
+------------
+,23 АПР 2021, 20:37:22
+JsSIP:InviteClientTransaction Timer M expired for transaction z9hG4bK3666890 +13s
+------------
+,23 АПР 2021, 20:37:23
+JsSIP:Transport send() +25s
+------------
+,23 АПР 2021, 20:37:23
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:37:23
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6526458;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=ptdf2993d8
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 5 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMG/2CDBdOhD60OIVLOcWzZ7kSIZ4dN", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:37:24
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "c9ad1d0fe2c12e4d61eb7006f7ab5f07"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +26s
+------------
+,23 АПР 2021, 20:37:24
+JsSIP:Transport send() +747ms
+------------
+,23 АПР 2021, 20:37:24
+JsSIP:WebSocketInterface send() +748ms
+------------
+,23 АПР 2021, 20:37:24
+JsSIP:WebSocketInterface received WebSocket message +30ms
+------------
+,23 АПР 2021, 20:37:24
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK790616;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=ptdf2993d8
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 6 REGISTER
+Date: Fri, 23 Apr 2021 17:37:24 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +30ms
+------------
+,23 АПР 2021, 20:37:49
+JsSIP:Transport send() +25s
+------------
+,23 АПР 2021, 20:37:49
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6362937
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=0ge6v489jg
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 7 REGISTER
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +3ms
+------------
+,23 АПР 2021, 20:37:49
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:37:49
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6362937;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=0ge6v489jg
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 7 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHGWCDBe2cMyz1uOgBqdFdPfkatpPZ", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:37:49
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:37:49
+JsSIP:WebSocketInterface send() +707ms
+------------
+,23 АПР 2021, 20:37:49
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK4482193;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=0ge6v489jg
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 8 REGISTER
+Date: Fri, 23 Apr 2021 17:37:50 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:WebSocketInterface received WebSocket message +1s
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:Transport received text message:
+
+INVITE sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK3b6d.4710f152a271970c1496b50401450c26.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKcgp719vj5aF5F
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045943 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Session-Expires: 120;refresher=uac
+Min-SE: 120
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 552
+
+v=0
+o=FreeSWITCH 1619182133 1619182134 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37226 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37226
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Bct1V4F8
+a=ice-pwd:gsUYLPf2k4xKQErHxqUE9RrK94
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37226 typ host
+a=end-of-candidates
+
+ +1s
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:Transport sending message:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK3b6d.4710f152a271970c1496b50401450c26.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKcgp719vj5aF5F
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045943 INVITE
+Supported: gruu,ice,replaces,outbound
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:RTCSession receiveRequest() +1m
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:RTCSession _processInDialogSdpOffer() +0ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:RTCSession emit "sdp" +3ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:RTCSession createLocalDescription() +2ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:Transport sending message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK3b6d.4710f152a271970c1496b50401450c26.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKcgp719vj5aF5F
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045943 INVITE
+Contact: sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c
+Supported: gruu,ice,replaces,outbound
+Content-Type: application/sdp
+Content-Length: 1523
+
+v=0
+o=- 1825663507067856537 4 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=msid-semantic: WMS Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik
+m=audio 60117 RTP/SAVPF 0 126
+c=IN IP4 5.167.154.107
+a=rtcp:60118 IN IP4 5.167.154.107
+a=candidate:1775372849 1 udp 2122260223 192.168.1.137 60117 typ host generation 0 network-id 1
+a=candidate:1775372849 2 udp 2122260222 192.168.1.137 60118 typ host generation 0 network-id 1
+a=candidate:3902409861 1 udp 1686052607 5.167.154.107 60117 typ srflx raddr 192.168.1.137 rport 60117 generation 0 network-id 1
+a=candidate:3902409861 2 udp 1686052606 5.167.154.107 60118 typ srflx raddr 192.168.1.137 rport 60118 generation 0 network-id 1
+a=candidate:659683009 1 tcp 1518280447 192.168.1.137 9 typ host tcptype active generation 0 network-id 1
+a=candidate:659683009 2 tcp 1518280446 192.168.1.137 9 typ host tcptype active generation 0 network-id 1
+a=ice-ufrag:RxZA
+a=ice-pwd:O9HmZ9Vq0z4ogTBGh7Ve0rWO
+a=ice-options:trickle
+a=fingerprint:sha-256 9A:8D:4A:0D:B2:AB:2B:78:0C:12:F2:E5:CD:3E:38:B7:46:3A:CC:BE:8F:90:48:68:15:64:53:A4:27:7C:85:D4
+a=setup:passive
+a=mid:0
+a=sendrecv
+a=msid:Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik 8ff94e11-010e-4b44-8d4b-673f3bc4a974
+a=rtcp-mux
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:3675581032 cname:zgdrdXX0avHUQLWO
+a=ssrc:3675581032 msid:Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik 8ff94e11-010e-4b44-8d4b-673f3bc4a974
+a=ssrc:3675581032 mslabel:Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik
+a=ssrc:3675581032 label:8ff94e11-010e-4b44-8d4b-673f3bc4a974
+
+ +0ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:WebSocketInterface send() +9ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK3b6d.d4bb824dec3e4ef2bf1e0892325e5ea7.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKDSF034Dp2K5QB
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045943 ACK
+Content-Length: 0
+
+
+ +36ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:WebSocketInterface received WebSocket message +1ms
+------------
+,23 АПР 2021, 20:37:51
+JsSIP:RTCSession receiveRequest() +1ms
+------------
+,23 АПР 2021, 20:38:14
+JsSIP:WebSocketInterface send() +24s
+------------
+,23 АПР 2021, 20:38:14
+JsSIP:WebSocketInterface received WebSocket message +26ms
+------------
+,23 АПР 2021, 20:38:14
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK1788940;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=4pt8ghq1hp
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 9 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHM2CDBgfC9fMLBJzUXpBtKQ1VxXU6", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:38:15
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:38:15
+JsSIP:WebSocketInterface send() +781ms
+------------
+,23 АПР 2021, 20:38:15
+JsSIP:WebSocketInterface received WebSocket message +30ms
+------------
+,23 АПР 2021, 20:38:15
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK1935220;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=4pt8ghq1hp
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 10 REGISTER
+Date: Fri, 23 Apr 2021 17:38:16 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:38:23
+JsSIP:InviteServerTransaction Timer L expired for transaction z9hG4bK3b6d.4710f152a271970c1496b50401450c26.0 +0ms
+------------
+,23 АПР 2021, 20:38:40
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:38:40
+JsSIP:WebSocketInterface received WebSocket message +26ms
+------------
+,23 АПР 2021, 20:38:40
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6525275;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=gjiaos3m5a
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 11 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHTWCDBiGbZKwYPBVzoSIhdVm38cUp", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +26ms
+------------
+,23 АПР 2021, 20:38:41
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "d0be93b266fb10786367dcc17b55f751"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +26s
+------------
+,23 АПР 2021, 20:38:41
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK9245932
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=gjiaos3m5a
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 12 REGISTER
+Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMHTWCDBiGbZKwYPBVzoSIhdVm38cUp", uri="sip:yandex-team.ru", response="d0be93b266fb10786367dcc17b55f751", qop=auth, cnonce="5qij3g10see0", nc=00000001
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:38:41
+JsSIP:WebSocketInterface send() +722ms
+------------
+,23 АПР 2021, 20:38:41
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK9245932;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=gjiaos3m5a
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 12 REGISTER
+Date: Fri, 23 Apr 2021 17:38:42 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:WebSocketInterface received WebSocket message +12s
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:Transport received text message:
+
+INVITE sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK0b6d.d8b1257ac4fd8a750bee9394f750efe6.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKQKcrNKpS5c4jF
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045944 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Session-Expires: 120;refresher=uac
+Min-SE: 120
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 552
+
+v=0
+o=FreeSWITCH 1619182133 1619182134 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37226 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37226
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Bct1V4F8
+a=ice-pwd:gsUYLPf2k4xKQErHxqUE9RrK94
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37226 typ host
+a=end-of-candidates
+
+ +12s
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:Transport sending message:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK0b6d.d8b1257ac4fd8a750bee9394f750efe6.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKQKcrNKpS5c4jF
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045944 INVITE
+Supported: gruu,ice,replaces,outbound
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:RTCSession receiveReinvite() +0ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:RTCSession _processInDialogSdpOffer() +1ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:RTCSession createLocalDescription() +1ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:WebSocketInterface send() +5ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK0b6d.81e7bb494a73dd05e4eaa81bc10ee5f2.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKrv5gQe7v2Nt5a
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045944 ACK
+Content-Length: 0
+
+
+ +36ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:RTCSession receiveRequest() +38ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK0b6d.81e7bb494a73dd05e4eaa81bc10ee5f2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK0b6d.81e7bb494a73dd05e4eaa81bc10ee5f2.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKrv5gQe7v2Nt5a
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045944 ACK
+Content-Length: 0
+
+
+ +4ms
+------------
+,23 АПР 2021, 20:38:53
+JsSIP:RTCSession receiveRequest() +4ms
+------------
+,23 АПР 2021, 20:39:06
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK4061926
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=cepaq1rtg5
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 13 REGISTER
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:39:06
+JsSIP:WebSocketInterface send() +13s
+------------
+,23 АПР 2021, 20:39:06
+JsSIP:WebSocketInterface received WebSocket message +26ms
+------------
+,23 АПР 2021, 20:39:06
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK4061926;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=cepaq1rtg5
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 13 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHZ2CDBju+FZb3Vk3oDQVy5kiVgLoy", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +26ms
+------------
+,23 АПР 2021, 20:39:07
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:39:07
+JsSIP:WebSocketInterface send() +710ms
+------------
+,23 АПР 2021, 20:39:07
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK9681323;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=cepaq1rtg5
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 14 REGISTER
+Date: Fri, 23 Apr 2021 17:39:07 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:39:25
+JsSIP:InviteServerTransaction Timer L expired for transaction z9hG4bK0b6d.d8b1257ac4fd8a750bee9394f750efe6.0 +1m
+------------
+,23 АПР 2021, 20:39:32
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:39:32
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK7877546;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=16p9pquaf4
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 15 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHgGCDBlSJro/4XfLlyzFlppFLVzY9", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:39:33
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:39:33
+JsSIP:WebSocketInterface send() +707ms
+------------
+,23 АПР 2021, 20:39:33
+JsSIP:WebSocketInterface received WebSocket message +30ms
+------------
+,23 АПР 2021, 20:39:33
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK1050625;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=16p9pquaf4
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 16 REGISTER
+Date: Fri, 23 Apr 2021 17:39:33 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +30ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:Transport received text message:
+
+INVITE sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK1b6d.ec44954093d3a117b33ccd0fc4133d38.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bK1D9F71yv852DK
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045945 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Session-Expires: 120;refresher=uac
+Min-SE: 120
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 552
+
+v=0
+o=FreeSWITCH 1619182133 1619182134 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37226 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37226
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Bct1V4F8
+a=ice-pwd:gsUYLPf2k4xKQErHxqUE9RrK94
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37226 typ host
+a=end-of-candidates
+
+ +24s
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:Transport send() +4ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:RTCSession receiveRequest() +1m
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:RTCSession _processInDialogSdpOffer() +1ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:RTCSession createLocalDescription() +1ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:Transport sending message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK1b6d.ec44954093d3a117b33ccd0fc4133d38.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bK1D9F71yv852DK
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045945 INVITE
+Contact: sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c
+Supported: gruu,ice,replaces,outbound
+Content-Type: application/sdp
+Content-Length: 1523
+
+v=0
+o=- 1825663507067856537 6 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=msid-semantic: WMS Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik
+m=audio 60117 RTP/SAVPF 0 126
+c=IN IP4 5.167.154.107
+a=rtcp:60118 IN IP4 5.167.154.107
+a=candidate:1775372849 1 udp 2122260223 192.168.1.137 60117 typ host generation 0 network-id 1
+a=candidate:1775372849 2 udp 2122260222 192.168.1.137 60118 typ host generation 0 network-id 1
+a=candidate:3902409861 1 udp 1686052607 5.167.154.107 60117 typ srflx raddr 192.168.1.137 rport 60117 generation 0 network-id 1
+a=candidate:3902409861 2 udp 1686052606 5.167.154.107 60118 typ srflx raddr 192.168.1.137 rport 60118 generation 0 network-id 1
+a=candidate:659683009 1 tcp 1518280447 192.168.1.137 9 typ host tcptype active generation 0 network-id 1
+a=candidate:659683009 2 tcp 1518280446 192.168.1.137 9 typ host tcptype active generation 0 network-id 1
+a=ice-ufrag:RxZA
+a=ice-pwd:O9HmZ9Vq0z4ogTBGh7Ve0rWO
+a=ice-options:trickle
+a=fingerprint:sha-256 9A:8D:4A:0D:B2:AB:2B:78:0C:12:F2:E5:CD:3E:38:B7:46:3A:CC:BE:8F:90:48:68:15:64:53:A4:27:7C:85:D4
+a=setup:passive
+a=mid:0
+a=sendrecv
+a=msid:Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik 8ff94e11-010e-4b44-8d4b-673f3bc4a974
+a=rtcp-mux
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:3675581032 cname:zgdrdXX0avHUQLWO
+a=ssrc:3675581032 msid:Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik 8ff94e11-010e-4b44-8d4b-673f3bc4a974
+a=ssrc:3675581032 mslabel:Enztv2vWQ5nZLendcAAI7hVZBMbcooPbTYik
+a=ssrc:3675581032 label:8ff94e11-010e-4b44-8d4b-673f3bc4a974
+
+ +0ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:WebSocketInterface send() +6ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:WebSocketInterface received WebSocket message +34ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK1b6d.a3d6d12fdaf03e1844d10da28687114b.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bK2p288vF05eS0e
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045945 ACK
+Content-Length: 0
+
+
+ +35ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:RTCSession receiveRequest() +38ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK1b6d.a3d6d12fdaf03e1844d10da28687114b.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bK1b6d.a3d6d12fdaf03e1844d10da28687114b.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bK2p288vF05eS0e
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045945 ACK
+Content-Length: 0
+
+
+ +16ms
+------------
+,23 АПР 2021, 20:39:57
+JsSIP:RTCSession receiveRequest() +15ms
+------------
+,23 АПР 2021, 20:39:58
+JsSIP:WebSocketInterface send() +670ms
+------------
+,23 АПР 2021, 20:39:58
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK2355496;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=b2s1v82aqe
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 17 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHmmCDBm554QtujqQ1K3ckDVfYfIS4", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +26ms
+------------
+,23 АПР 2021, 20:39:58
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:39:58
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK3810155
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=b2s1v82aqe
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 18 REGISTER
+Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMHmmCDBm554QtujqQ1K3ckDVfYfIS4", uri="sip:yandex-team.ru", response="aa3a1e0e001ec1aa473ca974d786807a", qop=auth, cnonce="3fgc1iim1e34", nc=00000001
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:39:58
+JsSIP:WebSocketInterface send() +725ms
+------------
+,23 АПР 2021, 20:39:58
+JsSIP:WebSocketInterface received WebSocket message +30ms
+------------
+,23 АПР 2021, 20:39:58
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK3810155;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=b2s1v82aqe
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 18 REGISTER
+Date: Fri, 23 Apr 2021 17:39:59 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:40:23
+JsSIP:Transport send() +25s
+------------
+,23 АПР 2021, 20:40:23
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:40:23
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK2966574;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=pibmo1uc5l
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 19 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHtGCDBogNaa5WQtKB2ATzIsgzz8B4", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +28ms
+------------
+,23 АПР 2021, 20:40:24
+JsSIP:Transport send() +796ms
+------------
+,23 АПР 2021, 20:40:24
+JsSIP:WebSocketInterface send() +797ms
+------------
+,23 АПР 2021, 20:40:24
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK1967701;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=pibmo1uc5l
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 20 REGISTER
+Date: Fri, 23 Apr 2021 17:40:25 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +30ms
+------------
+,23 АПР 2021, 20:40:29
+JsSIP:InviteServerTransaction Timer L expired for transaction z9hG4bK1b6d.ec44954093d3a117b33ccd0fc4133d38.0 +1m
+------------
+,23 АПР 2021, 20:40:49
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6751652
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=snbt13njlj
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 21 REGISTER
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:40:49
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:40:49
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6751652;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=snbt13njlj
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 21 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMHzmCDBqK7iQRziV92cK10lQBoumIf", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:40:50
+JsSIP:DigestAuthentication authenticate() | response generated +1ms
+------------
+,23 АПР 2021, 20:40:50
+JsSIP:WebSocketInterface send() +744ms
+------------
+,23 АПР 2021, 20:40:50
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK4446852;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=snbt13njlj
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 22 REGISTER
+Date: Fri, 23 Apr 2021 17:40:51 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:Transport received text message:
+
+INVITE sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bKea6d.6ba127c260991dee00053047c13ee839.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKB857rg7ZBZ18p
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045946 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Session-Expires: 120;refresher=uac
+Min-SE: 120
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 552
+
+v=0
+o=FreeSWITCH 1619182133 1619182134 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37226 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37226
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Bct1V4F8
+a=ice-pwd:gsUYLPf2k4xKQErHxqUE9RrK94
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37226 typ host
+a=end-of-candidates
+
+ +7s
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:RTCSession receiveRequest() +60s
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:RTCSession _processInDialogSdpOffer() +0ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:RTCSession createLocalDescription() +1ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:Transport send() +7ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:WebSocketInterface send() +8ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bKea6d.5162fc054013cf88824a6c242f866918.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKcHZ0tBr387QUj
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045946 ACK
+Content-Length: 0
+
+
+ +35ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:RTCSession receiveRequest() +36ms
+------------
+,23 АПР 2021, 20:40:57
+JsSIP:RTCSession receiveRequest() +1ms
+------------
+,23 АПР 2021, 20:41:15
+JsSIP:Transport send() +18s
+------------
+,23 АПР 2021, 20:41:15
+JsSIP:WebSocketInterface send() +18s
+------------
+,23 АПР 2021, 20:41:15
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK5965632;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=3u0dirv8rt
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 23 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMH6GCDBryAQpYaq9lxV/vgqSFonsYU", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:41:16
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "6cb1812c81ed5ef97c510c38108342ec"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +26s
+------------
+,23 АПР 2021, 20:41:16
+JsSIP:WebSocketInterface send() +920ms
+------------
+,23 АПР 2021, 20:41:16
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK8640319;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=3u0dirv8rt
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 24 REGISTER
+Date: Fri, 23 Apr 2021 17:41:17 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:41:29
+JsSIP:InviteServerTransaction Timer L expired for transaction z9hG4bKea6d.6ba127c260991dee00053047c13ee839.0 +1m
+------------
+,23 АПР 2021, 20:41:41
+JsSIP:Transport send() +25s
+------------
+,23 АПР 2021, 20:41:41
+JsSIP:WebSocketInterface send() +25s
+------------
+,23 АПР 2021, 20:41:41
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK916826;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=1fudlo3ut5
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 25 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMIAmCDBtalRzm8+WJNK3J4L0uNdc2/", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:41:42
+JsSIP:DigestAuthentication custom: /webphone/authorize 200, {
+  "TYPE": "REPLY",
+  "PARAM": {},
+  "STATUSDESC": null,
+  "STATUSCODE": 200,
+  "DATA": {
+    "RESP": "695bf3bd50014cf8be11b773c3b98220"
+  },
+  "STATUS": "TRUE",
+  "STATUSMSG": ""
+} +26s
+------------
+,23 АПР 2021, 20:41:42
+JsSIP:Transport send() +758ms
+------------
+,23 АПР 2021, 20:41:42
+JsSIP:WebSocketInterface send() +759ms
+------------
+,23 АПР 2021, 20:41:42
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK5997491;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=1fudlo3ut5
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 26 REGISTER
+Date: Fri, 23 Apr 2021 17:41:42 GMT
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:57941;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";temp-gruu="sip:uloc-60760888-7ff8-3dd6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:Transport received text message:
+
+INVITE sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bKfa6d.68f3257d94e716ac8a05295509546c46.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKN22ZaZF3er03a
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045947 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Session-Expires: 120;refresher=uac
+Min-SE: 120
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 552
+
+v=0
+o=FreeSWITCH 1619182133 1619182134 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37226 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37226
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:Bct1V4F8
+a=ice-pwd:gsUYLPf2k4xKQErHxqUE9RrK94
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37226 typ host
+a=end-of-candidates
+
+ +12s
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:Transport sending message:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bKfa6d.68f3257d94e716ac8a05295509546c46.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKN22ZaZF3er03a
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045947 INVITE
+Supported: gruu,ice,replaces,outbound
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:RTCSession receiveRequest() +57s
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:RTCSession _processInDialogSdpOffer() +1ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:RTCSession createLocalDescription() +1ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:WebSocketInterface send() +5ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:WebSocketInterface received WebSocket message +47ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:RTCSession receiveRequest() +49ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:Transport received text message:
+
+ACK sip:davydovandrey@yandex-team.ru;gr=urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c SIP/2.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bKfa6d.eec8eb1d81f9cce226d3837f10963efe.0
+Via: SIP/2.0/WSS 213.180.193.204:7443;branch=z9hG4bKfa6d.eec8eb1d81f9cce226d3837f10963efe.0
+Via: SIP/2.0/UDP [2a02:6b8:b010:902d::bf];received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;received=2A02:6B8:B010:902D:0:0:0:BF;rport=5060;branch=z9hG4bKpBvrct06B1ppp
+Max-Forwards: 69
+From: sip:+79169924545@yandex-team.ru;tag=KHj38y3y8g74e
+To: sip:davydovandrey@yandex-team.ru;tag=00u9bae7fk
+Call-ID: 33jsnsdv6s9ridckigdo
+CSeq: 35045947 ACK
+Content-Length: 0
+
+
+ +1ms
+------------
+,23 АПР 2021, 20:41:54
+JsSIP:RTCSession receiveRequest() +1ms
+------------
+,23 АПР 2021, 20:42:07
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6631230
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=3r2hs75e5l
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 27 REGISTER
+Contact: sip:i1ergjrm@aqq2ftlp5t8b.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:b24c6261-d27f-47da-ad02-ed2e0928b57c";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:42:07
+JsSIP:WebSocketInterface send() +13s
+------------
+,23 АПР 2021, 20:42:07
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS aqq2ftlp5t8b.invalid;branch=z9hG4bK6631230;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.95e30000
+From: sip:davydovandrey@yandex-team.ru;tag=3r2hs75e5l
+Call-ID: soctmf4roq2mf1ib8btfj1
+CSeq: 27 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMIG2CDBu8D7AAy6GgEAWoXyPF6iaV1", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +27ms
+------------
+,23 АПР 2021, 20:42:08
+JsSIP:DigestAuthentication custom error: SyntaxError: Unexpected token E in JSON at position 1, status 504 +27s
+------------
+,23 АПР 2021, 20:42:26
+JsSIP:InviteServerTransaction Timer L expired for transaction z9hG4bKfa6d.68f3257d94e716ac8a05295509546c46.0 +57s
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:WebSocketInterface new() [url:"wss://drive-phone.tel.yandex-team.ru:7443"] +0ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:UA new() [configuration:{
+  "sockets": {
+    "_url": "wss://drive-phone.tel.yandex-team.ru:7443",
+    "_sip_uri": "sip:drive-phone.tel.yandex-team.ru:7443;transport=ws",
+    "_via_transport": "WSS",
+    "_ws": null
+  },
+  "session_timers": false,
+  "authorization_user": "davydovandrey",
+  "uri": "sip:davydovandrey@yandex-team.ru",
+  "password": "NA"
+}] +0ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:UA - uri: sip:davydovandrey@yandex-team.ru +0ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:UA start() +0ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:WebSocketInterface connecting to WebSocket wss://drive-phone.tel.yandex-team.ru:7443 +0ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:WebSocketInterface WebSocket wss://drive-phone.tel.yandex-team.ru:7443 connected +136ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK3425458
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=v6g4n7quim
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 1 REGISTER
+Contact: sip:54965l4h@5899vsatnqt7.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:WebSocketInterface send() +4ms
+------------
+,23 АПР 2021, 20:53:43
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK3425458;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.49ef0000
+From: sip:davydovandrey@yandex-team.ru;tag=v6g4n7quim
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMK1GCDCahHK2r4m/kH9+SrOxGmcqzX", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:53:44
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:53:44
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK514266
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=v6g4n7quim
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 2 REGISTER
+Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMK1GCDCahHK2r4m/kH9+SrOxGmcqzX", uri="sip:yandex-team.ru", response="d881462fb7b309b52cb6d1bb0b38d1c5", qop=auth, cnonce="m2u3ok475f2v", nc=00000001
+Contact: sip:54965l4h@5899vsatnqt7.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365";expires=600
+Expires: 600
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:53:44
+JsSIP:WebSocketInterface send() +650ms
+------------
+,23 АПР 2021, 20:53:44
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK514266;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.49ef0000
+From: sip:davydovandrey@yandex-team.ru;tag=v6g4n7quim
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 2 REGISTER
+Date: Fri, 23 Apr 2021 17:53:45 GMT
+Contact: sip:54965l4h@5899vsatnqt7.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:58572;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365";temp-gruu="sip:uloc-60760888-7ffb-bcf6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +42ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:RTCSession new +0ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:RTCSession connect() +1ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:RTCSession newRTCSession() +0ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:RTCSession emit "connecting" +1ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:RTCSession createLocalDescription() +5ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:Transport send() +5s
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:WebSocketInterface send() +5s
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:Transport received text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK3926967;received=5.167.154.107
+To: sip:+79169924545@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.49ef0000
+From: sip:davydovandrey@yandex-team.ru;tag=4df6grgga2
+Call-ID: 0hui5g5i6mtm084rfsu5
+CSeq: 2459 INVITE
+Proxy-Authenticate: Digest realm="yandex-team.ru", nonce="YIMK2mCDCa6TFWa5izU1FL/QdMC1dOCA", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +33ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:WebSocketInterface send() +2ms
+------------
+,23 АПР 2021, 20:53:49
+JsSIP:InviteClientTransaction Timer D expired for transaction z9hG4bK3926967 +0ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:Transport sending message:
+
+INVITE sip:+79169924545@yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK4699107
+Max-Forwards: 69
+To: sip:+79169924545@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=4df6grgga2
+Call-ID: 0hui5g5i6mtm084rfsu5
+CSeq: 2460 INVITE
+Proxy-Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMK2mCDCa6TFWa5izU1FL/QdMC1dOCA", uri="sip:+79169924545@yandex-team.ru", response="860a0bd3893efb748b77dadb3d7083b2", qop=auth, cnonce="rpvfo87sb6b5", nc=00000001
+X-Call-ID: 39666
+Contact: sip:davydovandrey@yandex-team.ru;gr=urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: gruu,ice,replaces,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 1783
+
+v=0
+o=- 2182748703463734873 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0
+a=extmap-allow-mixed
+a=msid-semantic: WMS kAgF46YBsJ04F2JFz4b1azSZHR6YtHslERWL
+m=audio 62962 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 192.168.1.137
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1775372849 1 udp 2122260223 192.168.1.137 62962 typ host generation 0 network-id 1
+a=ice-ufrag:zIYy
+a=ice-pwd:zvBUvq8cciix5BkuXhB2LR7x
+a=ice-options:trickle
+a=fingerprint:sha-256 A2:C4:D2:50:AC:91:D1:66:8B:B5:E4:87:7A:88:D1:77:97:F4:F0:C1:F1:C6:A5:48:AC:86:35:79:B3:4B:5E:77
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:kAgF46YBsJ04F2JFz4b1azSZHR6YtHslERWL fd773ee6-8f95-43eb-a87f-6bcddeb56026
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:3504759431 cname:MuZWdpWbLG4pN4xv
+a=ssrc:3504759431 msid:kAgF46YBsJ04F2JFz4b1azSZHR6YtHslERWL fd773ee6-8f95-43eb-a87f-6bcddeb56026
+a=ssrc:3504759431 mslabel:kAgF46YBsJ04F2JFz4b1azSZHR6YtHslERWL
+a=ssrc:3504759431 label:fd773ee6-8f95-43eb-a87f-6bcddeb56026
+
+ +0ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:WebSocketInterface send() +973ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:Transport received text message:
+
+SIP/2.0 100 trying -- your call is important to us
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK4699107;received=5.167.154.107
+To: sip:+79169924545@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=4df6grgga2
+Call-ID: 0hui5g5i6mtm084rfsu5
+CSeq: 2460 INVITE
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +41ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:RTCSession receiveInviteResponse() +1s
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:Transport received text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;received=5.167.154.107;branch=z9hG4bK4699107
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=4df6grgga2
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=4df6grgga2
+From: sip:davydovandrey@yandex-team.ru;tag=4df6grgga2
+To: sip:+79169924545@yandex-team.ru;tag=eQZ7pSHDtD1er
+Call-ID: 0hui5g5i6mtm084rfsu5
+CSeq: 2460 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619181799 1619181800 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37984 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37984
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:ktO8453N
+a=ice-pwd:pj02EFlYR3OgLGqng2zikLcgTu
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37984 typ host
+a=end-of-candidates
+
+ +135ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:RTCSession receiveInviteResponse() +137ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:RTCSession emit "sdp" +1ms
+------------
+,23 АПР 2021, 20:53:50
+JsSIP:RTCSession emit "progress" +0ms
+------------
+,23 АПР 2021, 20:54:00
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;received=5.167.154.107;branch=z9hG4bK4699107
+Record-Route: sip:[2A02:6B8:0:1A09:0:0:0:A];r2=on;lr=on;ftag=4df6grgga2
+Record-Route: sip:213.180.193.204:7443;transport=ws;r2=on;lr=on;ftag=4df6grgga2
+From: sip:davydovandrey@yandex-team.ru;tag=4df6grgga2
+To: sip:+79169924545@yandex-team.ru;tag=eQZ7pSHDtD1er
+Call-ID: 0hui5g5i6mtm084rfsu5
+CSeq: 2460 INVITE
+Contact: sip:+79169924545@[2a02:6b8:b010:902d::bf]:5060;transport=udp
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Session-Expires: 120;refresher=uas
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 551
+
+v=0
+o=FreeSWITCH 1619181799 1619181800 IN IP4 213.180.207.20
+s=FreeSWITCH
+c=IN IP4 213.180.207.20
+t=0 0
+m=audio 37984 RTP/SAVPF 0 126
+a=mid:0
+a=rtpmap:0 PCMU/8000
+a=rtpmap:126 telephone-event/8000
+a=fmtp:126 0-16
+a=sendrecv
+a=rtcp:37984
+a=rtcp-mux
+a=setup:active
+a=fingerprint:sha-1 21:23:7D:01:E9:2E:95:3F:9F:23:C7:F5:D7:95:97:24:10:2F:CC:61
+a=ptime:20
+a=ice-ufrag:ktO8453N
+a=ice-pwd:pj02EFlYR3OgLGqng2zikLcgTu
+a=ice-options:trickle
+a=candidate:CiMYBU3vuLWZm9Lq 1 UDP 2130706431 213.180.207.20 37984 typ host
+a=end-of-candidates
+
+ +9s
+------------
+,23 АПР 2021, 20:54:00
+JsSIP:Dialog dialog 0hui5g5i6mtm084rfsu54df6grgga2eQZ7pSHDtD1er  changed to CONFIRMED state +9s
+------------
+,23 АПР 2021, 20:54:00
+JsSIP:RTCSession emit "sdp" +0ms
+------------
+,23 АПР 2021, 20:54:00
+JsSIP:RTCSession session accepted +3ms
+------------
+,23 АПР 2021, 20:54:00
+JsSIP:RTCSession emit "accepted" +0ms
+------------
+,23 АПР 2021, 20:54:00
+JsSIP:Transport send() +9ms
+------------
+,23 АПР 2021, 20:54:00
+JsSIP:RTCSession emit "confirmed" +0ms
+------------
+,23 АПР 2021, 20:54:09
+JsSIP:WebSocketInterface send() +9s
+------------
+,23 АПР 2021, 20:54:09
+JsSIP:WebSocketInterface received WebSocket message +25ms
+------------
+,23 АПР 2021, 20:54:09
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK8728645;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.49ef0000
+From: sip:davydovandrey@yandex-team.ru;tag=a0auam6ucc
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 3 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMK7mCDCcKf9J01dqfOTBSD4zoc+NX5", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +26ms
+------------
+,23 АПР 2021, 20:54:10
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:54:10
+JsSIP:WebSocketInterface send() +634ms
+------------
+,23 АПР 2021, 20:54:10
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK8282872;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.49ef0000
+From: sip:davydovandrey@yandex-team.ru;tag=a0auam6ucc
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 4 REGISTER
+Date: Fri, 23 Apr 2021 17:54:11 GMT
+Contact: sip:54965l4h@5899vsatnqt7.invalid;transport=ws;q=0.1;expires=30;rcv="sip:5.167.154.107:58572;transport=ws";pub-gruu="sip:davydovandrey@yandex-team.ru;gr=urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365";temp-gruu="sip:uloc-60760888-7ffb-bcf6-05941853@yandex-team.ru;gr";+sip.instance="urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365";reg-id=1
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +31ms
+------------
+,23 АПР 2021, 20:54:22
+JsSIP:InviteClientTransaction Timer B expired for transaction z9hG4bK4699107 +33s
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:UA stop() +34s
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:Transport send() +13s
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:UA closing session 0hui5g5i6mtm084rfsu54df6grgga2 +2ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:RTCSession terminating session +0ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:Transport send() +2ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:WebSocketInterface send() +3ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:RTCSession close() | closing local MediaStream +0ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:Dialog dialog 0hui5g5i6mtm084rfsu54df6grgga2eQZ7pSHDtD1er deleted +24s
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:RTCSession emit "ended" +4ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:Registrator already unregistered +0ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:Transport received text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK1668368;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.49ef0000
+From: sip:davydovandrey@yandex-team.ru;tag=t9o1168398
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 5 REGISTER
+WWW-Authenticate: Digest realm="yandex-team.ru", nonce="YIMK/GCDCdC2FepJC16jrqjJVXox1n3Z", qop="auth"
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +24ms
+------------
+,23 АПР 2021, 20:54:23
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;received=5.167.154.107;branch=z9hG4bK7916048
+From: sip:davydovandrey@yandex-team.ru;tag=4df6grgga2
+To: sip:+79169924545@yandex-team.ru;tag=eQZ7pSHDtD1er
+Call-ID: 0hui5g5i6mtm084rfsu5
+CSeq: 2461 BYE
+User-Agent: PHONE
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: timer, path, replaces
+Content-Length: 0
+
+
+ +29ms
+------------
+,23 АПР 2021, 20:54:24
+JsSIP:DigestAuthentication authenticate() | response generated +0ms
+------------
+,23 АПР 2021, 20:54:24
+JsSIP:Transport sending message:
+
+REGISTER sip:yandex-team.ru SIP/2.0
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK5337305
+Max-Forwards: 69
+To: sip:davydovandrey@yandex-team.ru
+From: sip:davydovandrey@yandex-team.ru;tag=t9o1168398
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 6 REGISTER
+Authorization: Digest algorithm=MD5, username="davydovandrey", realm="yandex-team.ru", nonce="YIMK/GCDCdC2FepJC16jrqjJVXox1n3Z", uri="sip:yandex-team.ru", response="87968e22cf1d59109fece55977d539af", qop=auth, cnonce="5jpgrhm70qck", nc=00000001
+Contact: sip:54965l4h@5899vsatnqt7.invalid;transport=ws;+sip.ice;reg-id=1;+sip.instance="urn:uuid:4dd69bc6-f527-468a-92d5-5ed1eeadb365";expires=0
+Expires: 0
+Allow: INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY
+Supported: path,gruu,outbound
+User-Agent: JsSIP 3.7.5
+Content-Length: 0
+
+
+ +0ms
+------------
+,23 АПР 2021, 20:54:24
+JsSIP:WebSocketInterface send() +656ms
+------------
+,23 АПР 2021, 20:54:24
+JsSIP:Transport received text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS 5899vsatnqt7.invalid;branch=z9hG4bK5337305;received=5.167.154.107
+To: sip:davydovandrey@yandex-team.ru;tag=29e02fac100ed5232df641c95a6bd617.49ef0000
+From: sip:davydovandrey@yandex-team.ru;tag=t9o1168398
+Call-ID: rnb9k9plalm7967sjo0npu
+CSeq: 6 REGISTER
+Date: Fri, 23 Apr 2021 17:54:25 GMT
+Server: Phone.Registrar
+Content-Length: 0
+
+
+ +32ms
+------------
+,23 АПР 2021, 20:54:25
+JsSIP:Transport close() +1s
+------------
+,23 АПР 2021, 20:54:25
+JsSIP:WebSocketInterface disconnect() +1s
+------------

@@ -1,0 +1,19 @@
+.places__like {
+    width: 30px;
+    height: 1.1875rem;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    background-image: url(../../../images/heart.svg);
+}
+
+.places__like:hover {
+    transition: opacity 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.places__like:enabled {
+    outline: none;
+}

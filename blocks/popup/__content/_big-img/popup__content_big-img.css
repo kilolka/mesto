@@ -1,0 +1,21 @@
+.popup__content_big-img {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 75vw;
+    max-height: 75vh;
+  	animation: opacity 0.9s forwards;
+    padding: 0;
+    position: relative;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

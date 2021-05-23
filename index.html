@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Места</title>
+    <link rel='stylesheet' href="pages/index.css">
+</head>
+
+<body class="page">
+    <div class='page__container'>
+
+        <header class="header">
+            <img src="images/Mesto.svg" class="header__logo" alt="Логотип">
+        </header>
+
+        <main class="content">
+
+            <section class="profile content__section">
+                <div class="profile__wrap">
+                    <img src="images/image.jpg" class="profile__pic" alt="Портрет">
+                    <div class="profile__info">
+                        <div class="profile__change-name">
+                            <h1 class='profile__name'>Жак-Ив Кусто</h1>
+                            <button aria-label="Close" class="profile__change-button" type="button"></button>
+                        </div>
+                        <p class="profile__job">Исследователь океана</p>
+                    </div>
+                </div>
+                <button class="profile__add-button" type="button"></button>
+            </section>
+
+            <section class="places content__section">
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">&copy; 2021 Reasonable - Shmeasonable</p>
+        </footer>
+
+    </div>
+    <div class="popup" id="openPopup">
+        <div class="popup__content-form" id="form popupProfile">
+            <button class="popup__button-close" type="button" id="closePopup"></button>
+            <form name="form popup" class="popup__form" id="profilePopup" novalidate>
+                <h3 class="popup__title">Редактировать профиль</h3>
+                <input id="name-input" type="text" class="popup__input popup__input_profile_name" required minlength="2"
+                    maxlength="40" name="inputName">
+                <span class="popup__input-error" id="name-input-error"></span>
+                <input id="job-input" type="text" class="popup__input popup__input_profile_job" required minlength="2"
+                    maxlength="200" name="inputJob">
+                <span class="popup__input-error" id="job-input-error"></span>
+                <button class=" popup__button popup__button-save" type="submit"
+                    id="btn-submit-profile">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup" id="openNewPopup">
+        <div class="popup__content-form " id="popupImage">
+            <form class="popup__form" name="form popup" id="placesPopup" novalidate>
+                <h3 class="popup__title">Новое место</h3>
+                <input id="place-input" type="text" class="popup__input popup__input_places_name" name="name"
+                    minlength="2" maxlength="30" required placeholder="Название" value="">
+                <span class="popup__input-error" id="place-input-error"></span>
+                <input id="url-input" type="url" class="popup__input popup__input_places_img" name="url" required
+                    placeholder="Ссылка на картинку" value="">
+                <span class="popup__input-error" id="url-input-error"></span>
+                <button class="popup__button popup__button-save" type="submit" id='btn-submit-places'>Создать</button>
+            </form>
+            <button class="popup__button-close" type="button" id="closeNewPopup"></button>
+        </div>
+    </div>
+
+    <div class="popup" id="big-img">
+        <div class="popup__content_big-img">
+            <button class="popup__button-close" type="button" id="closeImg"></button>
+
+            <figure class="popup__figure">
+                <img src="#" alt="#" class="popup__image">
+                <figcaption class="popup__info"></figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <template id="cards">
+        <div class="places__cards">
+            <button class="places__delete-button" type="button" id="deleteButton"></button>
+            <img src='#' class="places__image" alt="#">
+            <div class="places__info">
+                <h3 class="places__name"></h3>
+                <button class="places__like" type="button"></button>
+            </div>
+        </div>
+    </template>
+    <script src="scripts/validate.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
