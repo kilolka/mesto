@@ -1,5 +1,5 @@
-import {Card} from '/Card.js';
-import {FormValidator} from '/FormValidator.js'
+import {Card} from './Card.js';
+import {FormValidator} from './FormValidator.js'
 
 const changeButton = document.querySelector('.profile__change-button');
 const profilePopup = document.querySelector('#openPopup');
